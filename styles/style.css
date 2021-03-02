@@ -1,6 +1,10 @@
 
 body{
+
     background-image: url('/assets/images/shop.jpg');
+
+    
+
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -76,6 +80,7 @@ body{
 }
 
 
+
 #tops-heading {
     color: #fff;
     font-size: 20px;
@@ -102,3 +107,40 @@ body{
 #tops-div{
     height: 400px;
 }
+
+.sidenav {
+    height: 600px;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    margin-top: 8%;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+
+  .sidenav h1 {
+    
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .main {
+    margin-left: 200px; 
+  }
+
