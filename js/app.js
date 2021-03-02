@@ -129,12 +129,54 @@ function generate(type) {
 
 
 
+new Product('Islamic Wallpeper', 55, 'accessories', '../assets/accessories/islamic-wallpaper.png');
+new Product('River Wallpaper', 50, 'accessories', '../assets/accessories/river-wallpaper.jpg');
+new Product('Snowball Glass', 15, 'accessories', '../assets/accessories/snowball.jpg');
+new Product('Table Lamp', 30, 'accessories', '../assets/accessories/table-lamp.jpg');
+new Product('Tree Lamp', 25, 'accessories', '../assets/accessories/tree-lamp.jpg');
+new Product('Wall Clock', 45, 'accessories', '../assets/accessories/wall-clock.jpg');
 
-new Product('candy1', 10, 'candy', 'assets/candies/candy1.jpg');
-new Product('flower', 120, 'flowers', 'assets/flowers/lavander flower.jpg');
-new Product('balloons', 120, 'balloons', 'assets/balloons/balloons.jpg');
-new Product('balloons', 120, 'balloons', 'assets/balloons/balloons.jpg');
-new Product('balloons', 120, 'balloons', 'assets/balloons/balloons.jpg');
+new Product('Emoji Balloons', 25, 'balloons', '../assets/balloons/emoji-balloons.jpg');
+new Product('Glitter Balloons', 22, 'balloons', '../assets/balloons/glitter-balloons.jpg');
+new Product('Mix Balloons', 20, 'balloons', '../assets/balloons/mix-balloons.jpg');
+new Product('Rabit Balloons', 22, 'balloons', '../assets/balloons/rabit-balloons.jpg');
+new Product('Red Balloons', 26, 'balloons', '../assets/balloons/red-balloons.jpg');
+new Product('Star Balloons', 24, 'balloons', '../assets/balloons/star-balloons.jpg');
+
+new Product('Chocolate CupCake', 24, 'cakes', '../assets/cakes/Chocolate-Cupcakes.jpg');
+new Product('Easter Bunny CupCake', 24, 'cakes', '../assets/cakes/Easter-Bunny-Cupcakes.jpg');
+new Product('Hearts CupCake', 24, 'cakes', '../assets/cakes/heart-Cupcakes.jpg');
+new Product('Galaxy CupCake', 24, 'cakes', '../assets/cakes/Galaxy-Cupcakes.jpg');
+new Product('Rainbow CupCake', 24, 'cakes', '../assets/cakes/rainbow-cupcakes.jpg');
+new Product('Vanilla CupCake', 24, 'cakes', '../assets/cakes/Vanilla-Cupcakes.jpg');
+
+new Product('Lavander Flower', 60, 'flowers', '../assets/flowers/lavander-flower.jpg');
+new Product('Narcissus Flower', 35, 'flowers', '../assets/flowers/narcissus-flower.jpg');
+new Product('Orange Flower', 38, 'flowers', '../assets/flowers/orange-flower.jpg');
+new Product('Pink Flower', 40, 'flowers', '../assets/flowers/pink-flower.jpg');
+new Product('Rose Flower', 55, 'flowers', '../assets/flowers/rose-flower.jpg');
+new Product('Tulip Flower', 60, 'flowers', '../assets/flowers/tulip-flower.jpg');
+
+new Product('Gift Box 1', 75, 'gift-boxes', '../assets/gift-boxes/giftbox1.jpg');
+new Product('Gift Box 2', 150, 'gift-boxes', '../assets/gift-boxes/giftbox2.jpg');
+new Product('Gift Box 3', 100, 'gift-boxes', '../assets/gift-boxes/giftbox3.jpg');
+new Product('Gift Box 4', 80, 'gift-boxes', '../assets/gift-boxes/giftbox4.jpg');
+new Product('Gift Box 5', 90, 'gift-boxes', '../assets/gift-boxes/giftbox5.jpg');
+new Product('Gift Box 6', 120, 'gift-boxes', '../assets/gift-boxes/giftbox6.jpg');
+
+new Product ('Choclate Box1' , 15 , 'choclates' ,'../assets/chocolates/choclate1.jpg');
+new Product ('Choclate Box2' , 20 , 'choclates' ,'../assets/chocolates/choclate2.jpg');
+new Product ('Choclate Box3' , 13 , 'choclates' ,'../assets/chocolates/choclate3.jpg');
+new Product ('Choclate Box4' , 40 , 'choclates' ,'../assets/chocolates/choclate4.jpg');
+new Product ('Choclate Tube' , 12 , 'choclates' ,'../assets/chocolates/choclate5.jpg');
+new Product ('Choclate Box5' , 30 , 'choclates' ,'../assets/chocolates/choclate6.jpg');
+
+new Product ('Cone Candy' , 6 , 'candies' ,'../assets/candies/cone-candy.jpg');
+new Product ('Jelly Candy ' , 5 , 'candies' ,'../assets/candies/jelly-candy.png');
+new Product ('Milky Candy' , 7 , 'candies' ,'../assets/candies/milky-candy.png');
+new Product ('Mix Candy' , 10 , 'candies' ,'../assets/candies/mix-candy.jpg');
+new Product ('Mixcone Candy' , 12 , 'candies' ,'../assets/candies/mixcone-candy.png');
+new Product ('Pink Candy ' , 5 , 'candies' ,'../assets/candies/pink-candy.jpg');
 
 renderItems('all');
 
