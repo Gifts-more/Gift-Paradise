@@ -20,7 +20,7 @@ body {
     margin: 25px;
 
     --borderWidth: 5px;
-    background: #1D1F20;
+    background: rgba(71, 7, 68, 0.863);
     position: relative;
     border-radius: var(--borderWidth);
 
@@ -333,18 +333,20 @@ li a {
 }
 
 .leftInfo h3 {
-    color: #dbbad1;
+    color: #e2d7df;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 12px
 }
 
 .leftInfo h4 {
-    color:rgba(199, 166, 183, 0.8);
+    color:rgba(223, 204, 214, 0.8);
     font-family: cursive;
     font-size: 15px;
 
 }
 
 .btn {
+    margin-left: 30px;
     background: #d934c0;
     background-image: -webkit-linear-gradient(top, #d934c0, #2980b9);
     background-image: -moz-linear-gradient(top, #d934c0, #2980b9);
@@ -365,3 +367,53 @@ li a {
     background: #c9bccc;
     text-decoration: none;
   }
+
+
+
+#nav-accessories{
+        border: 5px solid rgb(175, 34, 93);
+        padding: 5px;
+        margin: 5px   
+}
+
+#nav-balloons{
+    border: 5px solid rgb(175, 34, 93);
+    padding: 5px;
+    margin: 5px   
+}
+
+#nav-cakes{
+    border: 5px solid rgb(175, 34, 93);
+    padding: 5px;
+    margin: 5px   
+}
+
+#nav-candies{
+    border: 5px solid rgb(175, 34, 93);
+    padding: 5px;
+    margin: 5px   
+}
+
+#nav-chocolates{
+    border: 5px solid rgb(175, 34, 93);
+    padding: 5px;
+    margin: 5px   
+}
+
+#nav-flowers{
+    border: 5px solid rgb(175, 34, 93);
+    padding: 5px;
+    margin: 5px   
+}
+
+#nav-gift-boxes{
+    border: 5px solid rgb(175, 34, 93);
+    padding: 5px;
+    margin: 5px   
+}
+
+#nav-all{
+    border: 5px solid rgb(175, 34, 93);
+    padding: 5px;
+    margin: 5px   
+}
