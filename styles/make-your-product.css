@@ -1,5 +1,3 @@
-
-
 body{
     align-content: center;
     background-image: url('../assets/images/back.gif');
@@ -11,7 +9,7 @@ body{
     padding-bottom: 20px;
     width:100%;
     text-align: center;
-=======
+  }
 .dropbtn {
     background-color: rgb(143, 73, 223);
     color: white;
