@@ -1,125 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Kaushan+Script&display=swap");
 
-        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Kaushan+Script&display=swap');
+body {
+  text-align: center;
+}
 
+body,
+html {
+  height: 100%;
+  margin: auto;
+  background: linear-gradient(to right, #42275a, #734b6d);
+}
 
-        body {
-            text-align: center;
-        }
+.bg {
+  /* The image used */
+  background-image: url("../assets/images/background.gif");
 
-        body,
-        html {
-            height: 100%;
-            margin: auto;
-            background: linear-gradient(to right, #42275a, #734b6d);
+  /* Full height */
+  height: 100%;
 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-        }
+.header {
+  width: 100%;
+  position: fixed;
+  /* background-color: rgb(206, 129, 129, 50%); */
+  z-index: 1;
+}
 
-        .bg {
-            /* The image used */
-            background-image: url('../assets/images/background.gif');
-            
-            /* Full height */
-            height: 100%;
+.header-div {
+  width: 100%;
+  background-color: rgba(68, 44, 80, 0.5);
+  display: inline-block;
+}
 
-            /* Center and scale the image nicely */
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+#logo-div {
+  display: inline-block;
+  margin-left: -20%;
+}
 
+#logo {
+  float: left;
+  width: 100px;
+}
 
-        .header {
-            width: 100%;
-            position: fixed;
-            background-color: rgb(206, 129, 129, 50%);
-            z-index: 1;
-        }
+#logotxt {
+  margin-top: 27px;
+  font-size: 50px;
+  display: inline-block;
+  font-family: "Kaushan Script", cursive;
+}
 
-        .header-div {
+#nav-div {
+  display: flex;
+  float: right;
+  margin-top: 27px;
+  margin-right: 5%;
+}
 
-            width: 80%;
-            background-color: rgba(68, 44, 80, 0.5);
-            display: inline-block;
-        }
+.li-nav {
+  display: inline-block;
+}
 
+#ul-nav {
+  list-style-type: none;
+}
 
+li a {
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Baloo 2", cursive;
+  font-size: 25px;
+}
 
-        #logo-div {
-            display: inline-block;
-            margin-left: -20%;
+main {
+  padding-top: 7%;
+}
 
-        }
+#intro {
+  margin-top: 5%;
+  background-color: rgb(0, 0, 0, 2%);
+  width: 100%;
+  height: 600px;
+  display: inline-block;
+}
 
-        #logo {
+#left-intro {
+  background-color: rgb(0, 0, 0, 10%);
+  float: left;
+  width: 40%;
+  height: 100%;
+  margin-left: 10%;
+  text-align: left;
+}
 
-            float: left;
-            width: 100px;
+#right-intro {
+  background-color: tomato;
+  float: right;
+  width: 40%;
+  margin-right: 10%;
+  height: 100%;
+}
 
-        }
-
-        #logotxt {
-            margin-top: 27px;
-            font-size: 50px;
-            display: inline-block;
-            font-family: 'Kaushan Script', cursive;
-
-        }
-
-        #nav-div {
-            display: flex;
-            float: right;
-            margin-top: 27px;
-            margin-right: 5%;
-        }
-
-        .li-nav {
-            display: inline-block;
-        }
-
-        #ul-nav {
-            list-style-type: none;
-
-        }
-
-        li a {
-            display: block;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-family: 'Baloo 2', cursive;
-            font-size: 25px;
-        }
-
-        main {
-            padding-top: 7%;
-
-        }
-
-        #intro {
-            margin-top: 5%;
-            background-color: rgb(0, 0, 0, 2%);
-            width: 100%;
-            height: 600px;
-            display: inline-block;
-        }
-
-        #left-intro {
-            background-color: rgb(0, 0, 0, 10%);
-            float: left;
-            width: 40%;
-            height: 100%;
-            margin-left: 10%;
-            text-align: left;
-        }
-
-        #right-intro {
-            background-color: tomato;
-            float: right;
-            width: 40%;
-            margin-right: 10%;
-            height: 100%;
-        }
-   
-        
-   
+.footerContainer {
+  color: white;
+  background-color: #bf8fb8;
+  font-family: "Baloo 2", cursive;
+  height: 116px;
+  margin-top: 92px;
+}
+footer .followUs{
+    position: relative;
+    top: 20px;
+}
+footer img {
+    padding-left: 13px;
+    width: 26px;
+}
+#copy{
+    color: #fb00ff;
+    font-size: 17px;
+}

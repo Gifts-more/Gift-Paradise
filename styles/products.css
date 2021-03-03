@@ -94,13 +94,13 @@ body {
 .header {
     width: 100%;
     position: fixed;
-    background-color: rgb(206, 129, 129, 50%);
+    /* background-color: rgb(206, 129, 129, 50%); */
     z-index: 1;
 }
 
 .header-div {
 
-    width: 80%;
+    width: 100%;
     background-color: rgba(68, 44, 80, 0.5);
     display: inline-block;
 }
@@ -161,6 +161,7 @@ li a {
     overflow-x: hidden;
     padding-top: 20px;
     text-align: left;
+    background-repeat: no-repeat;
     
 }
 
@@ -417,3 +418,24 @@ li a {
     padding: 5px;
     margin: 5px   
 }
+
+
+.footerContainer {
+    color: white;
+    background-color: #bf8fb8;
+    font-family: "Baloo 2", cursive;
+    height: 116px;
+    margin-top: 92px;
+  }
+  footer .followUs{
+      position: relative;
+      top: 20px;
+  }
+  footer img {
+      padding-left: 13px;
+      width: 26px;
+  }
+  #copy{
+      color: #fb00ff;
+      font-size: 17px;
+  }
