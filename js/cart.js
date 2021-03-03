@@ -83,6 +83,7 @@ function addCart() {
     let remove = document.createElement("td");
     tableRow.appendChild(remove);
     remove.setAttribute("id", i);
+    remove.setAttribute('class', 'removeButton')
     remove.textContent = "x";
     // let removeB = document.createElement('button');
     // remove.appendChild(removeB);
@@ -111,7 +112,7 @@ function popUp(params) {
     loadCart();
     setTimeout(function () {
       location.reload();
-    }, 3000);
+    }, 2500);
   };
 
   span.onclick = function () {
@@ -265,7 +266,9 @@ function voucherFunction(event) {
   if(code.value === '400SS'){
     // totalSum = totalSum* 0.7 
     getTotalSum.textContent = `${Math.floor(totalSum*=0.7)}`;
-    
+
+  // voucherInput = document.getElementById('voucherButton');
+    voucherInput.removeEventListener('click', voucherFunction);    
   }  
 }
 

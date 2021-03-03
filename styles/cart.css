@@ -28,6 +28,7 @@ body {
   .col-50 {
     -ms-flex: 50%; /* IE10 */
     flex: 50%;
+    border-radius: 3px;
   }
   
   .col-75 {
@@ -43,10 +44,14 @@ body {
   
   #container {
     background-color: #f2f2f2;
-    padding: 5px 20px 15px 20px;
+    /* padding: 5px 20px 15px 20px; */
     border: 1px solid lightgrey;
     border-radius: 3px;
-    width: 61.7%;
+    /* width: 61.7%; */
+    width: 1000px;
+    /* margin: 2px; */
+    text-align: center;
+    margin-left: 228px;
   }
   
   input[type=text] {
@@ -69,7 +74,7 @@ body {
   }
   
   #myBtn {
-    background-color: #4CAF50;
+    /* background-color: #4CAF50;
     color: white;
     padding: 12px;
     margin: 10px 0;
@@ -77,7 +82,19 @@ body {
     width: 100%;
     border-radius: 3px;
     cursor: pointer;
-    font-size: 17px;
+    font-size: 17px; */
+    background-color: #BF8FB8;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 67.35%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 25px;
+    position: relative;
+    left: -6px;
+    margin-top: 25px;
   }
   
   .btn:hover {
@@ -92,9 +109,9 @@ body {
     border: 1px solid lightgrey;
   }
   
-  span.price {
+  /* span.price {
     color: grey;
-  }
+  } */
   
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
   @media (max-width: 800px) {
@@ -154,11 +171,9 @@ body {
   cursor: pointer;
 }
 
-
-/* #tableResult{
-  width: 100%;
-border: solid;
-} */
+td{
+  border: solid 1px;
+}
 
 
 img{
@@ -167,10 +182,9 @@ img{
 
 
 
-
-.container{
+ .container{
   width: 50%;
-}
+} 
 
 .col-25{
   width: 162%;
@@ -190,7 +204,629 @@ table {
   width: 100%; 
 } 
 
-th, 
-td { 
+/* th
+ { 
   border: 1px solid black; 
+}  */
+
+tr{
+  margin-top: 5px;
+}
+
+/* 
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+} */
+
+/* 
+body,
+html {
+    height: 100%;
+    margin: auto;
+    background: linear-gradient(to right, #42275a, #734b6d);
+
+}  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html,body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+body {
+    font-family: Arial;
+    font-size: 17px;
+    padding: 8px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  #container {
+    background-color: #F2F2F2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    /* width: 61.7%; */
+  }
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  /* #myBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  } */
+  .btn:hover {
+    background-color: #45A049;
+  }
+  a {
+    color: #2196F3;
+  }
+  hr {
+    border: 1px solid lightgrey;
+  }
+  span.price {
+    color: grey;
+    margin-left: 5px;
+  }
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+      width: 40%;
+      float: right;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
+  body {font-family: Arial, Helvetica, sans-serif;}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+  background-color: #FEFEFE;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+/* The Close Button */
+.close {
+  color: #AAAAAA;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* #tableResult{
+  width: 100%;
+border: solid;
+} */
+img{
+  width: 100px;
+}
+.container{
+  width: 50%;
+}
+.col-25{
+  width: 162%;
+}
+/* td{
+  margin-left: 20px;
+} */
+table { 
+  border-collapse: collapse; 
+  border: 1px solid black; 
+  width: 100%;
+  table-layout: auto; 
+  width: 100%; 
 } 
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+.itemImg {
+    width: 200px;
+    height: 200px;
+}
+body {
+    /* text-align: center; */
+    background: linear-gradient(to right, #42275A, #734B6D);
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+      padding-top: 15px;
+  }
+  .sidenav a {
+      font-size: 18px;
+  }
+}
+.header {
+  width: 100%;
+  position: relative;
+  background-color: rgb(206, 129, 129, 50%);
+  z-index: 1;
+}
+/* .header-div {
+  width: 80%;
+  background-color: rgba(68, 44, 80, 0.5);
+  display: inline-block;
+} */
+#logo-div {
+  display: inline-block;
+  margin-left: -20%;
+}
+#logo {
+  float: left;
+  width: 100px;
+  margin-left: 300px;
+}
+#logotxt {
+  margin-top: 27px;
+  font-size: 50px;
+  display: inline-block;
+  font-family: 'Kaushan Script', cursive;
+  height: 50%;
+  letter-spacing: 2;
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+
+
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+  28%,
+  33% {
+    color: #ff65bd;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #ff2483;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+#nav-div {
+  display: flex;
+  float: right;
+  margin-top: 27px;
+  margin-right: 5%;
+}
+.li-nav {
+  display: inline-block;
+}
+#ul-nav {
+  list-style-type: none;
+}
+li a {
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Baloo 2', cursive;
+  font-size: 25px;
+}
+.sidenav {
+  margin-top: 15%;
+  height: 60%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  background-image: url('../assets/images/sidenav1.gif');
+  overflow-x: hidden;
+  padding-top: 20px;
+  /* text-align: left; */
+}
+.sidenav a{
+  list-style-type: none;
+  text-decoration: none;
+  margin-left: 7%;
+}
+#voucher{
+ width: fit-content;
+ margin-top: 36px; 
+ /* display: inline-block; */
+ border-radius: 8px;
+ height: 53px;
+}
+#voucher-form{
+  /* position: absolute; */
+  left: 1281px;
+}
+#voucher-h5{
+  margin-bottom: -29px;
+}
+/* #voucherButton{
+  position: absolute;
+    right: 207px;
+    top: 57px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+#voucherButton {
+  background-color: #BF8FB8;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+}
+
+.button3:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+}
+
+.button4:hover {background-color: #e7e7e7;}
+
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+
+
+
+
+#tableResult {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  /* width: 100%; */
+}
+
+#tableResult td, #tableResult th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tableResult tr:nth-child(even){background-color: #f2f2f2;}
+
+#tableResult tr:nth-child(odd){background-color: #f0ebeb;}
+
+#tableResult tr:hover {background-color: #ddd;}
+
+#tableResult th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #BF8FB8;
+  color: white;
+}
+
+
+
+
+
+
+
+#totalDiv{
+  margin: auto;
+  border: 2px solid #BF8FB8;
+  width: 133px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+
+
+
+#addressDiv{
+  border: solid #BF8FB8;
+  position: relative;
+  left: 383px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+
+
+.removeButton{ color: red;
+  font-size: 30px;
+  cursor: pointer;
+
+}

@@ -1,20 +1,58 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/animation.css">
+    <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/cart.css">
 
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
+
+</head>
 <body>
+    <!-- <div> -->
+        <!-- <nav>
+            <ul>
+                <li><a href="/index.html"></a>Home</li>
+                <li><a href="/pages/items.html">Items</a></li>
+                <li><a href="/pages/about-us.html">Contact us</a></li>
+            </ul>
+        </nav> -->
+    <!-- </div> -->
+    <header class="header">
+        <div class="header-div">
+            <div id="logo-div">
+                <img id="logo" src="../assets/images/glogo2.png" alt="logo">
+                <h1 id="logotxt" class="fast-flicker"><span class="flicker">Gift</span> Paradise</h1>
+            </div>
+            <div id="nav-div">
+                <nav class="nav">
+                    <ul id="ul-nav">
+                        <span class="li-span">
+                            <li class="li-nav"> <a href="../index.html">Home</a> </li>
+                        </span>
+                        <span class="li-span">
+                            <li class="li-nav"> <a href="pages/cart.html">View Items</a> </li>
+                        </span>
+                        <span class="li-span">
+                            <li class="li-nav"> <a href="pages/make-your-product.html">Custom Gift Box</a> </li>
+                        </span>
+                        <span class="li-span">
+                            <li class="li-nav"> <a href="pages/contact-us.html">Contact Us</a> </li>
+                        </span>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+    </header>
     <div class="row">
         <div class="col-75">
             <div class="container">
                 <form action="/action_page.php">
-
-                    <div class="row">
+                    <div id="addressDiv">
                         <div class="col-50">
                             <h3>Billing Address</h3>
                             <label for="fname"><i class="fa fa-user"></i> Full Name</label>
@@ -25,7 +63,6 @@
                             <input type="text" id="adr" name="address" placeholder="Street name">
                             <label for="city"><i class="fa fa-institution"></i> City</label>
                             <input type="text" id="city" name="city" placeholder="Amman">
-
                             <div class="row">
                                 <div class="col-50">
                                     <label for="state">State</label>
@@ -37,7 +74,6 @@
               </div> -->
                             </div>
                         </div>
-
                         <!-- <div class="col-50">
             <h3>Payment</h3>
             <label for="fname">Accepted Cards</label>
@@ -64,59 +100,55 @@
               </div> -->
                     </div>
             </div>
-
         </div>
         <label>
-
             </form>
     </div>
     </div>
     <div class="col-25">
         <div id="container">
+            
+            <div style="margin-left: 870px;">
             <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b
-                        id="totalItems"></b></span></h4>
+                id="totalItems"></b></span></h4>
+                </div>
             <hr>
             <table id="tableResult">
-                
                 <th>Item</th>
                 <th>Image</th>
                 <th>Quantity</th>
                 <th>Price</th>
                 <th>Remove</th>
-               
             </table>
-
-        </div>
-
-        <form >
-            <input type="text" id="voucher" >
-            <input type="button" value="Submit" id="voucherButton"></input>
-        </form>
-
-
-        <div>
-            <p>Total <span class="price" style="color:black"><b id="totalSum"></b></span></p>
-        </div>
+            <form id="voucher-form" >
+                <!-- <h5 id="voucher-h5"> Add your voucher here </h5> -->
+                <input type="text" id="voucher" placeholder="Add your voucher here" >
+                <input type="button" value="Apply voucher" id="voucherButton" ></input>
+            </form>
+            <div id="totalDiv">
+                <p>Total: <span class="price" style="color:black"><b id="totalSum"></b></span></p>
+            </div>
+            <input type="checkbox" checked="checked" name="sameadr" style="margin: 30px;"> Shipping address same as billing
+        </label>
+        <!-- <input type="submit" value="submit" class="btn"> -->
+        <!-- <button id="btn">Submit</button> -->
+        <!-- <button id="test">Submit</button> -->
     </div>
-
-    <input type="checkbox" checked="checked" name="sameadr" style="margin: 30px;"> Shipping address same as billing
-    </label>
-    <!-- <input type="submit" value="submit" class="btn"> -->
-    <!-- <button id="btn">Submit</button> -->
-    <!-- <button id="test">Submit</button> -->
+</div>
+<button id="myBtn">Checkout</button>
+</div>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Thank you</p>
     </div>
-
-    <button id="myBtn">Submit</button>
-
-
-    <div id="myModal" class="modal">
-
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Thank you</p>
-        </div>
-
-    </div>
+</div>
     <script src="/js/cart.js"></script>
 </body>
 </html>
+
+
+
+
+
+
