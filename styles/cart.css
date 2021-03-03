@@ -830,3 +830,41 @@ li a {
   cursor: pointer;
 
 }
+
+
+
+
+.footerContainer2 {
+  color: white;
+  background-color: #bf8fb8;
+  font-family: "Baloo 2", cursive;
+  height: 116px;
+  margin-top: 92px;
+  position: relative;
+}
+footer .followUs2{
+    position: relative;
+    top: -79px;
+}
+
+footer img {
+    padding-left: 13px;
+    width: 26px;
+    position: relative;
+    top: 64px;
+}
+#copy2{
+    color: #fb00ff;
+    font-size: 17px;
+   
+
+}
+#h6follow{
+  position: relative;
+  top: 105px;
+}
+
+#billing, #fullName, #env, #address, #inst, #fullName1, #env1, #address1, #inst1, #state1{
+  color: white;
+
+}
