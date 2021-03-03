@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/animation.css">
+    <link rel="stylesheet" href="/styles/slide.css">
+    <link rel="stylesheet" href="/styles/topsellers.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
     <title>Gift Paradise</title>
@@ -25,16 +27,16 @@
                     <nav class="nav">
                         <ul id="ul-nav">
                             <span class="li-span">
-                                <li class="li-nav"> <a href="pages/items.html">Our Products</a> </li>
+                                <li class="li-nav"> <a href="/pages/items.html">Our Products</a> </li>
                             </span>
                             <span class="li-span">
-                                <li class="li-nav"> <a href="pages/cart.html">View Cart</a> </li>
+                                <li class="li-nav"> <a href="/pages/cart.html">View Cart</a> </li>
                             </span>
                             <span class="li-span">
-                                <li class="li-nav"> <a href="pages/make-your-product.html">Custom Gift Box</a> </li>
+                                <!-- <li class="li-nav"> <a href="pages/make-your-product.html">Custom Gift Box</a> </li> -->
                             </span>
                             <span class="li-span">
-                                <li class="li-nav"> <a href="pages/contact-us.html">Contact Us</a> </li>
+                                <li class="li-nav"> <a href="/pages/contact-us.html">Contact Us</a> </li>
                             </span>
                         </ul>
                     </nav>
@@ -55,7 +57,7 @@
                             <header></header>
                             <aside></aside>
                             <main>
-                                <blockquote class="message">Our Vision: Lorem ipsum dolor sit amet consectetur adipisicing elit. Non adipisci aliquam accusantium dolores hic quaerat unde, placeat voluptatem quam modi a, eaque vitae illum, amet ex. Corporis, beatae. Laborum, velit!   </blockquote>
+                                <blockquote class="message">Our Vision: To be the number one online website seeking online orders for delivery of Flowers , Cakes ,Chocolates , and other assorted gift items across Jordan!   </blockquote>
                             </main>
                             <footer class="author">Gift Paradise Team</footer>
                         </div>
@@ -68,13 +70,71 @@
 
                 </div>
 
-                <div id="right-intro">
+                <!-- <div id="right-intro">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis assumenda perspiciatis ad,
                         aut
                         necessitatibus in a! Deleniti, id ipsum in dolorem hic rerum, facilis pariatur temporibus
                         repellat
                         perspiciatis sunt tenetur!</p>
+                </div> -->
+            </div>
+
+
+
+
+            <div class="slideshow-container">
+
+                <div class="mySlides ">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="/assets/slides/slide-balloons.jpg" style="width: 900px; height: 400px">
+                    <div class="text">Different Sets</div>
                 </div>
+        
+                <div class="mySlides ">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="/assets/slides/slide-chocolate.jpg" style="width: 900px; height: 400px">
+                    <div class="text">Mini chocolate box</div>
+                </div>
+        
+                <div class="mySlides ">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="/assets/slides/slide-gift.jpg" style="width: 900px; height:400px">
+                    <div class="text">Our Gifts</div>
+                </div>
+        
+                <div class="mySlides ">
+                    <div class="numbertext">4/ 6</div>
+                    <img src="/assets/slides/slide-candy.jpg" style="width: 900px; height:400px">
+                    <div class="text">Candy present</div>
+                </div>
+        
+                <div class="mySlides ">
+                    <div class="numbertext">5/ 6</div>
+                    <img src="/assets/slides/slide-redflower.jpg" style="width: 900px; height:400px">
+                    <div class="text">Flower Gifts</div>
+                </div>
+        
+                <div class="mySlides ">
+                    <div class="numbertext">6/ 6</div>
+                    <img src="/assets/slides/slide-partygift.jpg" style="width: 900px; height:400px">
+                    <div class="text">For every Occasion</div>
+                </div>
+        
+        
+        
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            </div>
+            <br>
+        
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
             </div>
 
 
@@ -82,13 +142,63 @@
 
 
 
+        <div class="top-sellers">
+            
+            <p id="tops-header">Top Sellers</p>
+            <div class="top-items">
+                <p class="tops-text"> Candy pipe</p>
+                <img class="tops-pics" src="assets/chocolates/choclate5.jpg" alt="candy pipe">
+            </div>
 
+            <div class="top-items">
+                <p class="tops-text"> Lavender boucquet</p>
+                <img class="tops-pics" src="assets/flowers/lavander-flower.jpg" alt="Lavender">
+            </div>
+
+            <div class="top-items">
+                <p class="tops-text"> Journal Set</p>
+                <img class="tops-pics" src="assets/gift-boxes/giftbox2.jpg" alt="candy pipe">
+            </div>
+
+            <div class="top-items">
+                <p class="tops-text"> Chocolate Box</p>
+                <img class="tops-pics" src="assets/chocolates/choclate3.jpg" alt="candy pipe">
+            </div>
+
+
+
+
+
+
+        </div>
         </main>
 
-        <footer>
+        <footer class="footerContainer">
+            <div class="followUs">
+                <h6>FOLLOW US ON: </h6>
+                <br>
+                <img src="assets/images/fb-icon.png" alt="">
+                <img src="assets/images/insta-icon.png" alt="">
+                <img src="assets/images/mail-icon.png" alt="">
+                <img src="assets/images/pint-icon.png" alt="">
+                <img src="assets/images/twit-icon.png" alt="">
+                <br>
+                <br>
+
+                <h6 id="copy"> Gift-Paradise &copy; 2021 </h6>
+            </div>
+
+            <!-- <div id="subscribe">
+                <h6> OR SUBSCRIBE FOR OUR NEWSLETTER</h6>
+                <input type="text">
+            </div> -->
+
+
+
 
 
         </footer>
+        <script src="/js/slide.js"></script>
     </div>
 </body>
 
