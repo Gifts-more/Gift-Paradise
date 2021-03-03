@@ -332,5 +332,41 @@ li a {
 
 }
 
+.leftInfo h3 {
+    color: #b473a1;
+    font-family: cursive;
+}
 
+.leftInfo h4 {
+    color:rgba(207, 100, 154, 0.8);
+    font-family: cursive;
+    font-size: 15px;
 
+}
+
+.btn {
+    background: #c891e6;
+    background-image: -webkit-linear-gradient(top, #c891e6, #a33b93);
+    background-image: -moz-linear-gradient(top, #c891e6, #a33b93);
+    background-image: -ms-linear-gradient(top, #c891e6, #a33b93);
+    background-image: -o-linear-gradient(top, #c891e6, #a33b93);
+    background-image: linear-gradient(to bottom, #c891e6, #a33b93);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #ce85ff;
+    background-image: -webkit-linear-gradient(top, #ce85ff, #c418de);
+    background-image: -moz-linear-gradient(top, #ce85ff, #c418de);
+    background-image: -ms-linear-gradient(top, #ce85ff, #c418de);
+    background-image: -o-linear-gradient(top, #ce85ff, #c418de);
+    background-image: linear-gradient(to bottom, #ce85ff, #c418de);
+    text-decoration: none;
+  }
