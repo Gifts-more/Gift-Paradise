@@ -3,6 +3,10 @@
 'use strict';
 
 
+
+
+
+
 let items = document.getElementById('items');
 let cartItems = [];
 let firstRun = true;
@@ -28,15 +32,14 @@ function renderItems(type) {
     switch (type) {
         case 'flowers':
             generate('flowers');
-
             break;
-        case 'chocolate':
-            generate('chocolate');
+        case 'chocolates':
+            generate('chocolates');
             break;
-        case 'candy':
-            generate('candy');
+        case 'candies':
+            generate('candies');
             break;
-        case 'gift-boxes':
+        case 'gift boxes':
             generate('gift-boxes');
             break;
         case 'accessories':
@@ -44,6 +47,9 @@ function renderItems(type) {
             break;
         case 'balloons':
             generate('balloons');
+            break;
+        case 'cakes':
+            generate('cakes');
             break;
 
         default:
@@ -58,7 +64,7 @@ function renderItems(type) {
 
 
 function generate(type) {
-
+items.textContent = '';
     for (let i = 0; i < Product.allProducts.length; i++) {
 
         if (Product.allProducts[i].type === type) {
@@ -164,21 +170,57 @@ new Product('Gift Box 4', 80, 'gift-boxes', '../assets/gift-boxes/giftbox4.jpg')
 new Product('Gift Box 5', 90, 'gift-boxes', '../assets/gift-boxes/giftbox5.jpg');
 new Product('Gift Box 6', 120, 'gift-boxes', '../assets/gift-boxes/giftbox6.jpg');
 
-new Product ('Choclate Box1' , 15 , 'choclates' ,'../assets/chocolates/choclate1.jpg');
-new Product ('Choclate Box2' , 20 , 'choclates' ,'../assets/chocolates/choclate2.jpg');
-new Product ('Choclate Box3' , 13 , 'choclates' ,'../assets/chocolates/choclate3.jpg');
-new Product ('Choclate Box4' , 40 , 'choclates' ,'../assets/chocolates/choclate4.jpg');
-new Product ('Choclate Tube' , 12 , 'choclates' ,'../assets/chocolates/choclate5.jpg');
-new Product ('Choclate Box5' , 30 , 'choclates' ,'../assets/chocolates/choclate6.jpg');
+new Product('Choclate Box1', 15, 'chocolates', '../assets/chocolates/choclate1.jpg');
+new Product('Choclate Box2', 20, 'chocolates', '../assets/chocolates/choclate2.jpg');
+new Product('Choclate Box3', 13, 'chocolates', '../assets/chocolates/choclate3.jpg');
+new Product('Choclate Box4', 40, 'chocolates', '../assets/chocolates/choclate4.jpg');
+new Product('Choclate Tube', 12, 'chocolates', '../assets/chocolates/choclate5.jpg');
+new Product('Choclate Box5', 30, 'chocolates', '../assets/chocolates/choclate6.jpg');
 
-new Product ('Cone Candy' , 6 , 'candies' ,'../assets/candies/cone-candy.jpg');
-new Product ('Jelly Candy ' , 5 , 'candies' ,'../assets/candies/jelly-candy.png');
-new Product ('Milky Candy' , 7 , 'candies' ,'../assets/candies/milky-candy.png');
-new Product ('Mix Candy' , 10 , 'candies' ,'../assets/candies/mix-candy.jpg');
-new Product ('Mixcone Candy' , 12 , 'candies' ,'../assets/candies/mixcone-candy.png');
-new Product ('Pink Candy ' , 5 , 'candies' ,'../assets/candies/pink-candy.jpg');
+new Product('Cone Candy', 6, 'candies', '../assets/candies/cone-candy.jpg');
+new Product('Jelly Candy ', 5, 'candies', '../assets/candies/jelly-candy.png');
+new Product('Milky Candy', 7, 'candies', '../assets/candies/milky-candy.png');
+new Product('Mix Candy', 10, 'candies', '../assets/candies/mix-candy.jpg');
+new Product('Mixcone Candy', 12, 'candies', '../assets/candies/mixcone-candy.png');
+new Product('Pink Candy ', 5, 'candies', '../assets/candies/pink-candy.jpg');
 
 renderItems('all');
+
+
+
+let nav = document.getElementById('nav-accessories');
+nav.addEventListener('click', filter);
+
+let nav1 = document.getElementById('nav-balloons');
+nav1.addEventListener('click', filter);
+
+let nav2 = document.getElementById('nav-cakes');
+nav2.addEventListener('click', filter);
+
+let nav3 = document.getElementById('nav-candies');
+nav3.addEventListener('click', filter);
+
+let nav4 = document.getElementById('nav-chocolates');
+nav4.addEventListener('click', filter);
+
+let nav5 = document.getElementById('nav-flowers');
+nav5.addEventListener('click', filter);
+
+let nav6 = document.getElementById('nav-gift-boxes');
+nav6.addEventListener('click', filter);
+
+let nav7 = document.getElementById('nav-all');
+nav7.addEventListener('click', filter);
+
+
+function filter(event) {
+    event.preventDefault();
+    console.log(event.target.textContent);
+    renderItems((event.target.textContent).toLowerCase());
+
+
+}
+
 
 
 for (let i = 0; i < Product.allProducts.length; i++) {
@@ -215,13 +257,36 @@ function submitter(event) {
 
     if (cartItems.includes(Product.allProducts[event.target.id])) {
 
+        setTimeout(function(){
+            var x = document.getElementById('note');
+            var modifiedClass = document.getElementById('notecontext');
+            modifiedClass.textContent = (Product.allProducts[event.target.id].name + ' Got Added To The Cart');
+            x.style.display = 'block';
+        });
+        setTimeout(function(){
+            var modifiedClass = document.getElementById('note');
+            modifiedClass.style.display = 'none';
+        }, 4000);
+
+
+
         console.log('increase quantity before refreshing');
         let index = cartItems.indexOf(Product.allProducts[event.target.id]);
         cartItems[index].quantity++;
 
     } else {
 
-        console.log('adding a new item');
+        setTimeout(function(){
+            var x = document.getElementById('note');
+            var modifiedClass = document.getElementById('notecontext');
+            modifiedClass.textContent = (Product.allProducts[event.target.id].name + ' Got Added To The Cart');
+            x.style.display = 'block';
+        });
+        setTimeout(function(){
+            var modifiedClass = document.getElementById('note');
+            modifiedClass.style.display = 'none';
+        }, 4000);
+
         Product.allProducts[event.target.id].quantity++;
         cartItems.push(Product.allProducts[event.target.id]);
 

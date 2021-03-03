@@ -4,52 +4,40 @@
 <head>
     <title>Document</title>
     <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/animation.css">
+    <link rel="stylesheet" href="../styles/products.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <style>
-        .itemImg {
-            width: 200px;
-            height: 200px;
-        }
 
-
-        .item {
-            background-color: blanchedalmond;
-            display: inline-block;
-            margin: 25px;
-
-        }
-
-        .leftInfo {
-            float: left;
-        }
-
-        .rightInfo {
-            float: right;
-        }
-
-        #quantity {
-            width: 40px;
-        }
-    </style>
 
 </head>
 
 <body>
     <header class="header">
 
-      <div id="logo-div" >
-        <img id="logo" src="#" alt="logo">
-        <h1 id="h1" >Gift Paradise</h1>
-      </div>
-        <nav class="nav" >
-            <ul>
-                <li> <a href="#">list1</a> </li>
-                <li> <a href="#">list2</a> </li>
-                <li> <a href="#">list3</a> </li>
-            </ul>
-        </nav>
-
+        <div class="header-div">
+            <div id="logo-div">
+                <img id="logo" src="../assets/images/glogo2.png" alt="logo">
+                <h1 id="logotxt" class="fast-flicker"><span class="flicker">Gift</span> Paradise</h1>
+            </div>
+            <div id="nav-div">
+                <nav class="nav">
+                    <ul id="ul-nav">
+                        <span class="li-span">
+                            <li class="li-nav"> <a href="../index.html">Home</a> </li>
+                        </span>
+                        <span class="li-span">
+                            <li class="li-nav"> <a href="pages/cart.html">View Cart</a> </li>
+                        </span>
+                        <span class="li-span">
+                            <li class="li-nav"> <a href="pages/make-your-product.html">Custom Gift Box</a> </li>
+                        </span>
+                        <span class="li-span">
+                            <li class="li-nav"> <a href="pages/contact-us.html">Contact Us</a> </li>
+                        </span>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
 
@@ -57,70 +45,66 @@
     <div class="sidenav">
 
 
-        <h1>Categories</h1>
+        <h1>Filter Products by Type</h1>
         <br>
-        <a href="#">Flowers</a> 
-        <a href="#">Candies</a>
-        <a href="#">Chocolates</a>
-        <a href="#">Gift Boxes</a>
-      </div>
+        <a id="nav-accessories" href="#">Accessories</a>
+        <br>
+        <a id="nav-balloons" href="#">Balloons</a>
+        <br>
+        <a id="nav-cakes" href="#">Cakes</a>
+        <br>
+        <a id="nav-candies" href="#">Candies</a>
+        <br>
+        <a id="nav-chocolates" href="#">Chocolates</a>
+        <br>
+        <a id="nav-flowers" href="#">Flowers</a>
+        <br>
+        <a id="nav-gift-boxes" href="#">Gift Boxes</a>
+        <br>
+        <a id="nav-all" href="#">Show All</a>
+        <br>
+        <br>
+        <br>
+        <h1>Filter Products by Price</h1>
 
+
+    </div>
 
     <main class="main">
 
 
-        <div id="text" >
-            <div id="p1" >
-
-                <h1>Header</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, modi? Dolorem, animi natus officia
-                    neque facilis pariatur ipsa unde possimus maiores in magnam, nulla, voluptate eum nisi
-                    exercitationem. Hic, ullam.</p>
+        <div id="note">
+            <div id="notecontext">
 
             </div>
-
-            <div id="p2" >
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis assumenda perspiciatis ad, aut
-                    necessitatibus in a! Deleniti, id ipsum in dolorem hic rerum, facilis pariatur temporibus repellat
-                    perspiciatis sunt tenetur!</p>
+            <div class="area">
+                <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </div>
         </div>
 
-        <div>
-
-            <div class="slideshow-container">
-
-                <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 7</div>
-                    <img src="#" style="width:600px" class="imgs">
-                    <div class="text">Caption Text</div>
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-
-
-        </div>
+        <style>
 
 
 
-        
 
 
 
-        <div id="menu">
+
+        </style>
 
 
-        </div>
-
-
-
-        <div id="items">
-
-            
-        </div>
+        <div id="items"></div>
 
 
 
@@ -133,7 +117,7 @@
 
 
     </footer>
-<script src="../js/app.js"></script>
+    <script src="../js/app.js"></script>
 </body>
 
 

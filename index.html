@@ -4,94 +4,10 @@
 <head>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/animation.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
     <title>Gift Paradise</title>
-
-    <style>
-*{
-
-box-sizing: border-box;
-
-}
-body{
-    max-width: 100%;
-            text-align: center;
-            position: relative;
-
-
-}
-        body,
-        html {
-            height: 100%;
-            margin: auto;
-            
-
-        }
-
-        .bg {
-            /* The image used */
-            background-image: url('../assets/images/background.gif');
-
-            /* Full height */
-            height: 100%;
-
-            /* Center and scale the image nicely */
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-
-        .header {
-            background-color: rgb(206, 129, 129, 50%)
-
-
-        }
-        .header-div{
-            
-            
-            width: 80%;
-            background-color: rgba(68, 44, 80, 0.5);
-            display: inline-block;
-        }
-
-        #logo {
-            
-            float: left;
-            width: 100px;
-        }
-        
-
-        .logo-div{
-            display: inline-block;
-            
-        }
-        .nav-div{
-            float: right;
-        }
-
-        #logotxt{
-            margin-top: 36px;
-            margin-right: 30px;
-    font-size: 50px;
-    display: inline-block;
-    
-        }
-
-
-    </style>
-
-
-<!-- @media only screen and (max-width: 1200px){
-    /*Tablets [601px -> 1200px]*/
-}
-@media only screen and (max-width: 600px){
-	/*Big smartphones [426px -> 600px]*/
-}
-@media only screen and (max-width: 425px){
-	/*Small smartphones [325px -> 425px]*/
-} -->
 
 
 </head>
@@ -103,14 +19,23 @@ body{
             <div class="header-div">
                 <div id="logo-div">
                     <img id="logo" src="assets/images/glogo2.png" alt="logo">
-                    <h1 id="logotxt">Gift Paradise</h1>
+                    <h1 id="logotxt" class="fast-flicker"><span class="flicker">Gift</span> Paradise</h1>
                 </div>
-                <div class="nav-div">
+                <div id="nav-div">
                     <nav class="nav">
-                        <ul>
-                            <li> <a href="#">list1</a> </li>
-                            <li> <a href="#">list2</a> </li>
-                            <li> <a href="#">list3</a> </li>
+                        <ul id="ul-nav">
+                            <span class="li-span">
+                                <li class="li-nav"> <a href="pages/items.html">Our Products</a> </li>
+                            </span>
+                            <span class="li-span">
+                                <li class="li-nav"> <a href="pages/cart.html">View Cart</a> </li>
+                            </span>
+                            <span class="li-span">
+                                <li class="li-nav"> <a href="pages/make-your-product.html">Custom Gift Box</a> </li>
+                            </span>
+                            <span class="li-span">
+                                <li class="li-nav"> <a href="pages/contact-us.html">Contact Us</a> </li>
+                            </span>
                         </ul>
                     </nav>
                 </div>
@@ -120,17 +45,30 @@ body{
         <main>
 
 
-            <div id="text">
-                <div id="p1">
+            <div id="intro">
+                <div id="left-intro">
 
-                    <h1>Header</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, modi? Dolorem, animi natus officia
-                        neque facilis pariatur ipsa unde possimus maiores in magnam, nulla, voluptate eum nisi
-                        exercitationem. Hic, ullam.</p>
+
+
+                    <div class="floating">
+                        <div class="card-object rotate">
+                            <header></header>
+                            <aside></aside>
+                            <main>
+                                <blockquote class="message">Our Vision: Lorem ipsum dolor sit amet consectetur adipisicing elit. Non adipisci aliquam accusantium dolores hic quaerat unde, placeat voluptatem quam modi a, eaque vitae illum, amet ex. Corporis, beatae. Laborum, velit!   </blockquote>
+                            </main>
+                            <footer class="author">Gift Paradise Team</footer>
+                        </div>
+                    </div>
+
+
+
+
+
 
                 </div>
 
-                <div id="p2">
+                <div id="right-intro">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis assumenda perspiciatis ad,
                         aut
                         necessitatibus in a! Deleniti, id ipsum in dolorem hic rerum, facilis pariatur temporibus
@@ -139,114 +77,6 @@ body{
                 </div>
             </div>
 
-            <div>
-
-                <div class="slideshow-container">
-
-                    <!-- Full-width images with number and caption text -->
-                    <div class="Slides fade">
-                        <div class="numbertext">1 / 7</div>
-                        <img src="#" style="width:600px" class="imgs">
-                        <div class="text">Caption Text</div>
-                    </div>
-
-                    <div class="Slides fade">
-                        <div class="numbertext">2 / 7</div>
-                        <img src="#" style="width:600px" class="imgs">
-                        <div class="text">Caption Text</div>
-                    </div>
-
-                    <div class="Slides fade">
-                        <div class="numbertext">3 / 7</div>
-                        <img src="#" style="width:600px" class="imgs">
-                        <div class="text">Caption Text</div>
-                    </div>
-
-                    <div class="Slides fade">
-                        <div class="numbertext">4 / 7</div>
-                        <img src="#" style="width:600px" class="imgs">
-                        <div class="text">Caption Text</div>
-                    </div>
-
-                    <div class="Slides fade">
-                        <div class="numbertext">5 / 7</div>
-                        <img src="#" style="width:600px" class="imgs">
-                        <div class="text">Caption Text</div>
-                    </div>
-
-                    <div class="Slides fade">
-                        <div class="numbertext">6 / 7</div>
-                        <img src="#" style="width:600px" class="imgs">
-                        <div class="text">Caption Text</div>
-                    </div>
-
-                    <div class="Slides fade">
-                        <div class="numbertext">7 / 7</div>
-                        <img src="#" style="width:600px" class="imgs">
-                        <div class="text">Caption Text</div>
-                    </div>
-
-
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br>
-
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                    <span class="dot" onclick="currentSlide(5)"></span>
-                    <span class="dot" onclick="currentSlide(6)"></span>
-                    <span class="dot" onclick="currentSlide(7)"></span>
-                </div>
-
-
-            </div>
-
-
-
-
-
-
-            <div id="tops-div">
-                <h1 id="tops-heading">Best Sellers</h1>
-
-                <div class="top-selling">
-                    <p class="tops-text"> Candy pipe</p>
-                    <img class="tops-pics" src="assets/chocolates/choclate5.jpg" alt="candy pipe">
-
-                </div class="top-selling">
-                <p class="tops-text"> Lavender boucquet</p>
-                <img class="tops-pics" src="assets/flowers/lavander flower.jpg" alt="Lavender">
-
-                <div class="top-selling">
-                    <p class="tops-text"> Journal set</p>
-                    <img class="tops-pics" src="assets/gift-boxes/giftbox2.jpg" alt="Journal set">
-
-                </div>
-
-
-                <div>
-
-                </div>
-            </div>
-
-
-
-
-            <div id="menu">
-
-
-            </div>
-
-
-
-            <div id="items">
-
-
-            </div>
 
 
 
