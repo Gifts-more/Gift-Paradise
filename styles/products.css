@@ -333,40 +333,35 @@ li a {
 }
 
 .leftInfo h3 {
-    color: #b473a1;
-    font-family: cursive;
+    color: #dbbad1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .leftInfo h4 {
-    color:rgba(207, 100, 154, 0.8);
+    color:rgba(199, 166, 183, 0.8);
     font-family: cursive;
     font-size: 15px;
 
 }
 
 .btn {
-    background: #c891e6;
-    background-image: -webkit-linear-gradient(top, #c891e6, #a33b93);
-    background-image: -moz-linear-gradient(top, #c891e6, #a33b93);
-    background-image: -ms-linear-gradient(top, #c891e6, #a33b93);
-    background-image: -o-linear-gradient(top, #c891e6, #a33b93);
-    background-image: linear-gradient(to bottom, #c891e6, #a33b93);
-    -webkit-border-radius: 8;
-    -moz-border-radius: 8;
-    border-radius: 8px;
-    font-family: serif;
+    background: #d934c0;
+    background-image: -webkit-linear-gradient(top, #d934c0, #2980b9);
+    background-image: -moz-linear-gradient(top, #d934c0, #2980b9);
+    background-image: -ms-linear-gradient(top, #d934c0, #2980b9);
+    background-image: -o-linear-gradient(top, #d934c0, #2980b9);
+    background-image: linear-gradient(to bottom, #d934c0, #2980b9);
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    border-radius: 5px;
+    font-family: "Times New Roman", Times, serif;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 12px;
     padding: 5px 5px 5px 5px;
     text-decoration: none;
   }
   
   .btn:hover {
-    background: #ce85ff;
-    background-image: -webkit-linear-gradient(top, #ce85ff, #c418de);
-    background-image: -moz-linear-gradient(top, #ce85ff, #c418de);
-    background-image: -ms-linear-gradient(top, #ce85ff, #c418de);
-    background-image: -o-linear-gradient(top, #ce85ff, #c418de);
-    background-image: linear-gradient(to bottom, #ce85ff, #c418de);
+    background: #c9bccc;
     text-decoration: none;
   }
