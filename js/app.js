@@ -77,6 +77,7 @@ items.textContent = '';
             img.setAttribute('src', Product.allProducts[i].path);
             item.appendChild(img);
             let info = document.createElement('div');
+            info.setAttribute('class' , 'info');
             item.appendChild(info);
             let leftInfo = document.createElement('div');
             leftInfo.setAttribute('class', 'leftInfo');
@@ -94,6 +95,7 @@ items.textContent = '';
 
             let addBtn = document.createElement('button');
             addBtn.setAttribute('id', i);
+            addBtn.setAttribute('class', 'btn')
             rightInfo.appendChild(addBtn);
             addBtn.textContent = 'Add to Cart';
         } else if (type === 'all') {
@@ -106,6 +108,7 @@ items.textContent = '';
             img.setAttribute('src', Product.allProducts[i].path);
             item.appendChild(img);
             let info = document.createElement('div');
+            info.setAttribute('class' , 'info');
             item.appendChild(info);
             let leftInfo = document.createElement('div');
             leftInfo.setAttribute('class', 'leftInfo');
@@ -123,6 +126,7 @@ items.textContent = '';
 
             let addBtn = document.createElement('button');
             addBtn.setAttribute('id', i);
+            addBtn.setAttribute('class', 'btn')
             rightInfo.appendChild(addBtn);
             addBtn.textContent = 'Add to Cart';
 

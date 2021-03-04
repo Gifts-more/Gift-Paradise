@@ -1,0 +1,44 @@
+
+
+.top-sellers {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      margin-top: 150px;
+
+}
+
+.top-items  {
+      width: 20%;
+      height: 315px;
+      margin: 20px;
+      box-sizing: border-box;
+
+
+}
+
+.top-items:hover
+{
+        /* box-shadow: inset 12px 12px 0 25px #b34180; */
+        
+    box-shadow: 0 10px 10px 14px #b34180;
+}
+
+.tops-pics {
+    width: 285px;
+    height: 285px;
+}
+
+.tops-text {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+#tops-header {
+    padding-top: 135px;
+    font-size: 60px;
+    color: white;
+    
+}
