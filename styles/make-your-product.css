@@ -1,4 +1,4 @@
-body{
+/* body{
     align-content: center;
     background-image: url('../assets/images/back.gif');
     background-repeat: no-repeat;
@@ -51,4 +51,9 @@ body{
   #dropdown:hover .dropbtn {
     background-color: rgb(245, 97, 146);
 
-  }
+  } */
+
+#form-div{
+
+  margin-top: 7%;
+}
