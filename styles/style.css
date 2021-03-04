@@ -15,7 +15,6 @@ html {
 .bg {
   /* The image used */
   background-image: url("../assets/images/background.gif");
-
   /* Full height */
   height: 100%;
 
@@ -34,7 +33,7 @@ html {
 
 .header-div {
   width: 100%;
-  background-color: rgba(68, 44, 80, 0.5);
+  background-color: rgba(68, 44, 80, 99%);
   display: inline-block;
 }
 
@@ -119,8 +118,8 @@ footer .followUs{
     top: 20px;
 }
 footer img {
-    padding-left: 13px;
-    width: 26px;
+    
+    width: 30px;
 }
 #copy{
     color: #fb00ff;
