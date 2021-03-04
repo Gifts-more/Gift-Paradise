@@ -96,6 +96,7 @@ body {
     position: fixed;
     /* background-color: rgb(206, 129, 129, 50%); */
     z-index: 1;
+    top: 0;
 }
 
 .header-div {
